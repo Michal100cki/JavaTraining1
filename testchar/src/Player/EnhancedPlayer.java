@@ -19,7 +19,7 @@ public class EnhancedPlayer {
 
     public void loseHealth(int damage){
         this.hitPoints=this.hitPoints-damage;
-        if(this.hitPoints<=0){
+        if(this.hitPoints<=5){
             System.out.println( "Nokaut zawodnika "+this.hitPoints);
         }
     }
