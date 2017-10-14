@@ -94,7 +94,6 @@ break;
     public static void operacjaWplay() {
         System.out.println("Imie Klienta");
         String name = scanner.nextLine();
-        scanner.nextLine();
         System.out.println("wpłata");
         double wplata = Double.valueOf(scanner.nextLine());
         System.out.println(name+" "+wplata);
@@ -106,6 +105,8 @@ break;
             Customer oldCustomer=new Customer(name,staraKwota);
             Customer customer=new Customer(name,newKwota);
             oddzial.addCash(oldCustomer,customer);
+        }else{
+            System.out.println("Nie mamy Klienta o nazwisku "+ name);
         }
 
     }
