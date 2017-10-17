@@ -23,8 +23,12 @@ public class Branch {
 
 
     public void addCustomer(Customer customer) {
+if(findCustomer(customer.getName())>=0){
+    System.out.println("Klient o podanej nazwie istnieje już w bazie");
+}else{
+    listaKlientow.add(customer);
+}
 
-        listaKlientow.add(customer);
     }
 
 
